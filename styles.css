@@ -1,0 +1,35 @@
+h1, h4 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h4 {
+  border-bottom: 1px solid #01c115;
+  display: inline;
+  width: min-content;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  flex-basis: 24%;
+  margin: 10px auto;
+
+}
+
+#email {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
+.address {
+  text-transform: capitalize;
+}
