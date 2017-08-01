@@ -5,6 +5,7 @@ let container = document.getElementById("main-list");
 createListElement = function(person) {
   let newItem = document.createElement("li");
   let newPerson = `
+      <img src=${person.picture.large}>
       <h4>${person.name.first} ${person.name.last}</h4>
       <p id="email">${person.email}</p>
       <br>
@@ -12,7 +13,7 @@ createListElement = function(person) {
       <p class="address">${person.location.city}, ${person.location.state} ${person.location.postcode}</p>
       <p id="phone">${person.phone}</p>
       <br>
-      <p id ="ssn">${person.id.value}</p>
+      <p id="ssn">${person.id.value}</p>
   `;
   newItem.innerHTML = newPerson;
   container.appendChild(newItem);
