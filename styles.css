@@ -49,5 +49,14 @@ p {
 
 .address {
   text-transform: capitalize;
+}
 
+#ssn {
+  color: transparent;
+  text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#ssn:hover {
+  color: #01c115;
+  text-shadow: none;
 }
