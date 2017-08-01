@@ -19,9 +19,50 @@ createListElement = function(person) {
   container.appendChild(newItem);
 }
 
+
 for (let i = 0; i < customers.results.length; i++) {
   let current = customers.results[i];
   let phone = current.phone;
+
+  let state = current.location.state;
+  // This only works for these states... I should write it to include all 50 to make is reusable.
+  switch (state) {
+    case "missouri":
+      state = "MO";
+      break;
+    case "vermont":
+      state = "VT";
+      break;
+    case "west virginia":
+      state = "WV";
+      break;
+    case "washington":
+      state = "WA";
+      break;
+    case "arkansas":
+      state = "AR";
+      break;
+    case "indiana":
+      state = "IN";
+      break;
+    case "maryland":
+      state = "MD";
+      break;
+    case "rhode island":
+      state = "RI";
+      break;
+    case "utah":
+      state = "UT";
+      break;
+    case "north dakota":
+      state = "ND";
+      break;
+    case "oregon":
+      state = "OR";
+      break;
+  }
+  current.location.state = state;
+
   phone = phone.replace("(","");
   phone = phone.replace(")","");
   current.phone = phone;
